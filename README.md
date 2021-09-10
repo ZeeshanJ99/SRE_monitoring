@@ -34,40 +34,64 @@ From our Launch Template we will now create our Auto Scaling group. In order to 
 
 ![image](https://user-images.githubusercontent.com/88186084/132849708-65ba9688-a32f-416f-a7de-558576c6bb9c.png)
 
-- Once on the Auto Scaling groups page, click `create Auto Scaling group`
+---------------------------------------------------------
+
+### Step 1
+Once on the Auto Scaling groups page, click `create Auto Scaling group`
 
 - Add a name `SRE_zeeshan_AS` and select the launch template that we have built
 
 ![image](https://user-images.githubusercontent.com/88186084/132850054-106536e5-68e9-4607-8060-27574f337d12.png)
 
+------------------------------------------------------
 
+### Step 2 Configure settings
 
- - config min=1 max =3 - attach it to cloud watch
-document
+- Adhere to the `launch template`
 
+- Select `subnet 1a`
 
-create a load balancer to balance the load in case of traffic increase or decrease
-document 
+![image](https://user-images.githubusercontent.com/88186084/132858252-1e74a613-8319-468d-8d09-1747d5d93246.png)
 
+---------------------------------------------------
 
+### Step 3 Configure advanced options
 
-Create Diagram for each step and Diagram for entire project/process
+- Attach to a new load balancer
 
-share you repos at 11:30 with initial progress - share the progress before lunch 1300 then at 1700
+What is a load balancer
 
-= Second Iteration - SNS to send notification email/message 
-
-
-
-
-
-
-
-
-
-
-
-Load balancers
 ![image](https://user-images.githubusercontent.com/88186084/132836129-76b156d9-9524-4cc9-9f2c-1df28e615301.png)
 
+- Create the load balancer scheme 
+- `internet facing`
+- Add a `name`
+- Select `Enable group metrics collection within CloudWatch`
 
+![image](https://user-images.githubusercontent.com/88186084/132859684-e1c87b89-4434-4851-b033-0f5796510e79.png)
+
+----------------------------------------------------------
+
+### Step 4 Configure group size and scaling policies
+- Set the group size as follows
+
+![image](https://user-images.githubusercontent.com/88186084/132860461-2221d5d3-fe63-4144-9712-cb463cad39cb.png)
+
+- Select the `Target tracking sales policy`
+
+-------------------------------------------------------------
+
+### Step 5 Add Notifications
+= Second Iteration - SNS to send notification email/message 
+
+------------------------------------------------------------
+
+### Step 6 Add Tags
+Add a `name` and `description` tag
+
+![image](https://user-images.githubusercontent.com/88186084/132860914-f709d806-1625-4b70-9833-a726a97e2538.png)
+
+-------------------------------------------------------------
+
+### Step 7 Create Auto Scaling group
+Now click create the Auto Scaling group!
