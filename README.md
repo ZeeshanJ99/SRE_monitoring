@@ -7,6 +7,8 @@ done
 
 ## Scalability with Autoscaling group and Highly availability with ALB Application Load Balancer
 
+Create a launch template for an existing EC2 instance
+
 create an Autoscaling group - config min=1 max =3 - attach it to cloud watch
 document
 
